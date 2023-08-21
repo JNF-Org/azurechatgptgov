@@ -70,6 +70,7 @@ jobs:
       - name: 🗝️ Azure Login
         uses: azure/login@v1
         with:
+          environment: AzureUSGovernment
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: 🚀 Deploy to Azure Web App
